@@ -22,6 +22,8 @@ This guide walks through building the QuakeFlow pipeline.
   * `starttime`
   * `endtime`
 
+![Data Source URL link](screenshots/data_source_api.png)
+
 ---
 
 ## Bronze Layer – Ingestion Notebook
@@ -46,6 +48,8 @@ This guide walks through building the QuakeFlow pipeline.
 
 * Raw JSON file per day
 
+![Bronze Notebook](screenshots/bronze_notebook.png)
+
 ---
 
 ## Silver Layer – Transformation Notebook
@@ -68,6 +72,7 @@ This guide walks through building the QuakeFlow pipeline.
 ```
 earthquake_events_silver
 ```
+![Silver Notebook](screenshots/silver_notebook.png)
 
 ---
 
@@ -88,6 +93,7 @@ earthquake_events_silver
 ```
 earthquake_events_gold
 ```
+![Gold Notebook](screenshots/gold_notebook.png)
 
 ---
 
@@ -101,6 +107,8 @@ earthquake_events_gold
    ```
 3. Publish environment
 4. Attach to Gold notebook
+
+![Custom Environment](screenshots/custom_environment.png)
 
 ---
 
@@ -117,6 +125,7 @@ earthquake_events_gold
 3. Configure dependencies:
 
    * Bronze → Silver → Gold
+![Data Pipeline](screenshots/pipeline_run.png)
 
 ---
 
@@ -133,6 +142,7 @@ formatDateTime(addDays(utcNow(), -1), 'yyyy-MM-dd')
 ```
 formatDateTime(utcNow(), 'yyyy-MM-dd')
 ```
+![Notebook Parameters](screenshots/parameter_config.png)
 
 ---
 
@@ -152,6 +162,8 @@ formatDateTime(utcNow(), 'yyyy-MM-dd')
   * Files in Lakehouse
   * Silver table updates
   * Gold table updates
+    
+![Lakehouse items](screenshots/lakehouse_tables_&_files.png)
 
 ---
 
@@ -159,8 +171,10 @@ formatDateTime(utcNow(), 'yyyy-MM-dd')
 
 1. From the Lakehouse select `New Semantic Model`
 2. Name Earthquake Semantic Model and select the gold delta table
- 
 
+![Semantic Model](screenshots/semantic_model.png)
+
+---
 ## Create Power BI Report
 
 ### Steps:
@@ -186,6 +200,8 @@ formatDateTime(utcNow(), 'yyyy-MM-dd')
 
   * Total earthquakes
   * Max significance 
+
+![Power BI Dashboard](screenshots/powerbi_dashboard.png)
 
 ---
 
