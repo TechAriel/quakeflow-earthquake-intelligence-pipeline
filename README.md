@@ -175,7 +175,7 @@ earthquake_events_gold (Delta Table)
 
 ## Why This Project Matters
 
-QuakeFlow showcases the ability to:
+It showcases the ability to:
 
 * Build production-style data pipelines
 * Work with real-world APIs
