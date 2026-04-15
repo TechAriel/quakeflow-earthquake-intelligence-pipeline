@@ -1,6 +1,6 @@
-# QuakeFlow – Step-by-Step Implementation Guide
+# Step-by-Step Implementation Guide
 
-This guide walks through building the QuakeFlow pipeline.
+This guide walks through building the project pipeline.
 
 ---
 
