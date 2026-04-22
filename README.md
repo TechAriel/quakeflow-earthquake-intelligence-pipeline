@@ -188,4 +188,4 @@ It showcases the ability to:
 
 Gabriel Oduor
             
-Junior Data Engineer
+Junior Data Engineer.
